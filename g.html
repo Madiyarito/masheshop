@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Times new roman, sans-serif;
+            line-height: 2;
+            margin: 50px;
+  
+ background-color:#E2E3E3;
+}
+        h2 {
+            color:#7B8835;
+        }
+ 
+        .faq-item {
+            margin-bottom: 20px;
+        }
+ 
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: black;
+        }
+ 
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+ <h2 align=middle>Часто задаваемые вопросы</h2>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer1')">Q: Как оформить заказ? </div>
+        <div class="answer" id="answer1">A: Для начала вам предстоит выбрать товар и затем нажать на иконку "Купить"
+Далее вас перекидывает на страницу с контактами, где вы пишете или созваниваетесь с оператором и мы оформляем ваш заказ.</div>
+    </div>
+ 
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer2')">Q:Какое среднее время доставки? </div>
+        <div class="answer" id="answer2">A:Среднее время доставки занимает 5 дней</div>
+    </div>
+
+<div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer3')">Q:Из какого материала вы изготавливаете украшения?</div>
+        <div class="answer" id="answer3">A: Представленные в каталоге украшения изготовлены из благородных металлов а именно золото, серебро и тд.</div>
+    </div>
+
+ <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer4')">Q:Работает ли доставка в выходные дни? </div>
+        <div class="answer" id="answer4">A:Мы стараемся выполнить все заказы в течение рабочего времени. Но в отдельных случаях мы выполняем доставку и в выходные.</div>
+    </div>
+
+<div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer5')">Q:Как узнать размер своего кольца? </div>
+        <div class="answer" id="answer5">A:Для этого можно узнать свой размер в любом ювелирном магазине или же смотрите по таблице:
+        <h2>Таблица размеров колец</h2>
+
+    <table width="200" border="1" align="center" 
+     cellpadding="4" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Размер</th>
+                <th>Диаметр (мм)</th>
+                <th>Обхват (мм)</th>
+                <th>США</th>
+                <th>Великобритания</th>
+                <th>Европа</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >16</td>
+                <td>16.5</td>
+                <td>51.8</td>
+                <td>6</td>
+                <td>L</td>
+                <td>51.5</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>17.3</td>
+                <td>54.4</td>
+                <td>7</td>
+                <td>N</td>
+                <td>54</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+<div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer6')">Q: В каком виде происходит доставка изделий? </div>
+        <div class="answer" id="answer6">A:Все изделия, купленные в нашем магазине, бесплатно комплектуются упаковкой.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+if (answer.style.display === 'none') {
+answer.style.display = 'block';
+            } else {
+answer.style.display = 'none';
+            }
+        }
+    </script>
+ 
+</body>
+</html>
